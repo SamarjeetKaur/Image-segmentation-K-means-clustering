@@ -14,7 +14,7 @@ import cv2
 import matplotlib.pyplot as plt
 original_image = cv2.imread("/Users/nageshsinghchauhan/Desktop/images/p.jpg")
 # Converting from BGR Colours Space to HSV
-img=cv2.cvtColor(original_image,cv2.COLOR_BGR2RGB)
+img=cv2.cvtColor(original_image,cv2.COLOR_BGR2HSV)
 vectorized = img.reshape((-1,3))
 # convert to np.float32
 vectorized = np.float32(vectorized)
